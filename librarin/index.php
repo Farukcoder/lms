@@ -7,7 +7,7 @@
                 <!-- leftside content header -->
                 <div class="leftside-content-header">
                     <ul class="breadcrumbs">
-                        <li><i class="fa fa-home" aria-hidden="true"></i><a href="#">Dashboard</a></li>
+                        <li><i class="fa fa-home" aria-hidden="true"></i><a href="#">ড্যাশবোর্ড</a></li>
                     </ul>
                 </div>
             </div>
@@ -23,7 +23,7 @@
                     <a href="manage-books.php">
                         <div class="panel-content">
                             <h1 class="title color-darker-2"> <i class="fa fa-book"></i> <?= $total_books?> </h1>
-                            <h4 class="subtitle color-darker-1">Total Books</h4>
+                            <h4 class="subtitle color-darker-1">সর্বমোট বই</h4>
                         </div>
                     </a>
                 </div>
@@ -37,12 +37,12 @@
                     <a href="students.php">
                         <div class="panel-content">
                             <h1 class="title color-darker-2"> <i class="fa fa-users"></i> <?= $total_students?> </h1>
-                            <h4 class="subtitle color-darker-1">Total Students</h4>
+                            <h4 class="subtitle color-darker-1">মোট সদস্য</h4>
                         </div>
                     </a>
                 </div>
             </div>
-            <?php
+            <!-- <?php
             $libraian = mysqli_query($con,"SELECT * FROM `librarin`");
             $total_libraian = mysqli_num_rows($libraian);
             ?>
@@ -55,7 +55,7 @@
                         </div>
                     </a>
                 </div>
-            </div>
+            </div> -->
             <?php
             $books_qty = mysqli_query($con,"SELECT SUM(`book_qty`) as total FROM `books` ");
             $qty = mysqli_fetch_assoc($books_qty);
@@ -66,7 +66,7 @@
                     <a href="manage-books.php">
                         <div class="panel-content">
                             <h1 class="title color-darker-2"> <i class="fa fa-book"></i> <?= $qty['total']?> </h1>
-                            <h4 class="subtitle color-darker-1">Total Books Quantity</h4>
+                            <h4 class="subtitle color-darker-1">মোট বইয়ের সংখ্যা</h4>
                         </div>
                     </a>
                 </div>

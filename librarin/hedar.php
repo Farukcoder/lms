@@ -136,7 +136,7 @@
             <div class="header-section" id="user-headerbox">
                 <div class="user-header-wrap">
                     <div class="user-photo">
-                        <img alt="profile photo" src="../assets/images/avatar/avatar_user.jpg" />
+                        <img alt="profile photo" src="../images/user.png"/>
                     </div>
                     <div class="user-info">
                         <span class="user-name"><?= ucwords($librarin_info ['fname'].' '.$librarin_info ['lname'])?></span>
@@ -149,6 +149,7 @@
                     <div class="drop-content basic">
                         <ul>
                             <li> <a href=""><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+                            <li> <a href=""><i class="fa fa-key" aria-hidden="true"></i> Change Password</a></li>
                         </ul>
                     </div>
                 </div>
@@ -180,17 +181,20 @@
                     <nav>
                         <ul class="nav nav-left-lines" id="main-nav">
                             <!--HOME-->
-                            <li class="<?= $page == 'index.php'? 'active-item':'' ?>"><a href="index.php"><i class="fa fa-home" aria-hidden="true"></i><span>Dashboard</span></a></li>
-                            <li class="<?= $page == 'students.php'? 'active-item':'' ?>"><a href="students.php"><i class="fa fa-users" aria-hidden="true"></i><span>Students</span></a></li>
+                            <li class="<?= $page == 'index.php'? 'active-item':'' ?>"><a href="index.php"><i class="fa fa-home" aria-hidden="true"></i><span>ড্যাশবোর্ড</span></a></li>
+                            <li class="<?= $page == 'students.php'? 'active-item':'' ?>"><a href="students.php"><i class="fa fa-users" aria-hidden="true"></i><span>সদস্য</span></a></li>
                             <li class="has-child-item close-item <?= $page == 'add-book.php' ? 'open-item':'' ?><?= $page == 'manage-books.php' ? 'open-item':'' ?>">
-                                <a><i class="fa fa-book" aria-hidden="true"></i><span>Books</span></a>
+                                <a><i class="fa fa-book" aria-hidden="true"></i><span>বই সমূহ</span></a>
                                 <ul class="nav child-nav level-1" style="">
-                                    <li class="<?= $page == 'add-book.php'? 'active-item':'' ?>"><a href="add-book.php">Add Book</a></li>
-                                    <li class="<?= $page == 'manage-books.php'? 'active-item':'' ?>"><a href="manage-books.php">Manage Books</a></li>
+                                    <li class="<?= $page == 'add-book.php'? 'active-item':'' ?>"><a href="add-book.php">বই যুক্ত করুন</a></li>
+                                    <li class="<?= $page == 'manage-books.php'? 'active-item':'' ?>"><a href="manage-books.php">বই সম্পাদন করুন</a></li>
                                 </ul>
                             </li>
-                            <li class="<?= $page == 'issue-book.php'? 'active-item':'' ?>"><a href="issue-book.php"><i class="fa fa-book" aria-hidden="true"></i><span>Issue Book</span></a></li>
-                            <li class="<?= $page == 'return-book.php'? 'active-item':'' ?>"><a href="return-book.php"><i class="fa fa-book" aria-hidden="true"></i><span>Return Book</span></a></li>
+                            <li class="<?= $page == 'issue-book.php'? 'active-item':'' ?>"><a href="issue-book.php"><i class="fa fa-book" aria-hidden="true"></i><span>ইস্যুকৃত বই</span></a></li>
+                            <li class="<?= $page == 'return-book.php'? 'active-item':'' ?>"><a href="return-book.php"><i class="fa fa-book" aria-hidden="true"></i><span>ফেরতকৃত বই</span></a></li>
+                            <li class="<?= $page == 'report.php'? 'active-item':'' ?>"><a href="report.php"><i class="fa fa-list" aria-hidden="true"></i><span>রিপোর্ট সমূহ</span></a></li>
+                            <li class="<?= $page == 'change_password.php'? 'active-item':'' ?>"><a href="change_password.php">
+                            <i class="fa fa-key" aria-hidden="true"></i><span>পাসওয়ার্ড পরিবর্তন </span></a></li>
                         </ul>
 
                     </nav>

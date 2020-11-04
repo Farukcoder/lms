@@ -7,15 +7,17 @@ require_once 'hedar.php';
         <!-- leftside content header -->
         <div class="leftside-content-header">
             <ul class="breadcrumbs">
-                <li><i class="fa fa-home" aria-hidden="true"></i><a href="#">Dashboard</a></li>
-                <li><a href="javascript:avoid(0)">Students</a></li>
+                <li><i class="fa fa-home" aria-hidden="true"></i><a href="#">ডেশবোর্ড </a></li>
+                <li><a href="javascript:avoid(0)">সকল সদস্য</a></li>
             </ul>
         </div>
     </div>
     <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
     <div class="row animated fadeInUp">
         <div class="col-sm-12">
-            <h4 class="section-subtitle"><b>All Students</b></h4>
+            <div class="pull-left"><h4 class="section-subtitle"><b>সকল সদস্য</b></h4></div>
+            <div class="pull-right"><a href="print_all_students.php" target="_blank" class="btn btn-primary"><i class="fa fa-print"> Print</i></a></div>
+            <div class="clearfix"></div>
             <div class="panel">
                 <div class="panel-content">
                     <div class="table-responsive">

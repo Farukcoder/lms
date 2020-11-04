@@ -70,7 +70,7 @@ if (isset($_POST['save_book'])) {
         $inputs_errors['book_qty']="book quantity field is required";
     }
     //validate Available  Quantity
-    if (isset($_POST['available_qty'])){
+    if (!empty($_POST['available_qty'])){
         if (is_numeric($_POST['available_qty'])){
             $available_qty = $_POST['available_qty'];
         }else{

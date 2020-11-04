@@ -21,6 +21,7 @@
             <div class="col-sm-4 col-sm-offset-4">
                 <a class="btn btn-primary btn-block" href="librarin">librarin</a>
                 <a class="btn btn-primary btn-block" href="student">student</a>
+                <a class="btn btn-primary btn-block" href="index">Index pag</a>
             </div>
         </div>
     </div>
